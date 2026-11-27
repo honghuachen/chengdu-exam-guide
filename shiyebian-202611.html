@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026下半年成都市事业单位 · 11 岗位 8 维评估与优先级决策看板</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap');
+    body {
+      font-family: 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+    }
+    .gradient-header {
+      background: linear-gradient(135deg, #090d16 0%, #1e1b4b 45%, #312e81 100%);
+    }
+    .filter-btn.active {
+      background-color: #4f46e5;
+      color: #ffffff;
+      border-color: #4f46e5;
+      box-shadow: 0 2px 6px rgba(79, 70, 229, 0.25);
+    }
+    @media print {
+      .no-print { display: none !important; }
+      body { background: #fff !important; }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen">
+
+  <!-- Header -->
+  <header class="gradient-header text-white pt-9 pb-20 px-4 sm:px-6 lg:px-8 shadow-xl relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <div class="max-w-6xl mx-auto relative z-10">
+
+      <!-- Top Badges -->
+      <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-200 text-xs font-semibold tracking-wide border border-indigo-400/30">
+          <i class="fa-solid fa-compass"></i> 2026年下半年成都市事业单位公开考试招聘 · 决策看板
+        </div>
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="bg-rose-500 text-white px-2.5 py-0.5 rounded-full text-xs font-bold animate-pulse">
+            <i class="fa-regular fa-clock mr-1"></i>报名截止：11月27日 18:00
+          </span>
+          <span class="bg-amber-400 text-slate-900 px-2.5 py-0.5 rounded-full text-xs font-bold">笔试：12月26日</span>
+          <span class="bg-sky-400 text-slate-900 px-2.5 py-0.5 rounded-full text-xs font-bold">11 个候选岗位全对比</span>
+        </div>
+      </div>
+
+      <h1 class="text-2xl sm:text-4xl font-black tracking-tight text-white mb-3">
+        成都市事业单位 11 岗位 8 维评估与优先级排序看板
+      </h1>
+      <p class="text-indigo-200 text-sm sm:text-base max-w-4xl leading-relaxed">
+        覆盖市直、主城（青羊/武侯/成华）、二圈层（龙泉驿）、三圈层（新津/金堂）共 11 个意向岗位；从<strong>岗位职责、单位职能、公益属性、办公地点、加班出差、职业发展、报考难度与历史参考分、薪酬待遇</strong>八大维度逐一拆解并排序。
+      </p>
+      <p class="text-[11px] text-indigo-300/90 mt-2.5 max-w-4xl leading-relaxed">
+        <i class="fa-solid fa-circle-info mr-1"></i>数据来源：2026-11-27 09:22–09:38 招考平台实时缴费截图 + 四川人事考试网、成都市人社局、各区政府门户网公开信息联网核实。全部 11 岗均属<strong>公益一类（财政全额拨款）</strong>事业编制。
+      </p>
+
+      <!-- 快速决策 KPI 栏 -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 mt-6">
+        <a href="#job-1" class="block bg-white/10 hover:bg-white/15 transition backdrop-blur rounded-xl p-3.5 border border-white/15">
+          <div class="text-xs text-emerald-300 font-semibold">🏆 综合推荐第 1（T1）</div>
+          <div class="text-base sm:text-lg font-black text-white mt-0.5">青羊区疾控 · 信息技术</div>
+          <div class="text-[11px] text-indigo-200 mt-0.5">主城一圈层 · 专技十二级 · 128:1</div>
+        </a>
+        <a href="#job-2" class="block bg-white/10 hover:bg-white/15 transition backdrop-blur rounded-xl p-3.5 border border-white/15">
+          <div class="text-xs text-sky-300 font-semibold">🥈 专技十级 / 招4人（T1）</div>
+          <div class="text-base sm:text-lg font-black text-white mt-0.5">武侯人才 · 信息技术服务</div>
+          <div class="text-[11px] text-indigo-200 mt-0.5">十级专技及以下 · 137.3:1 · 限5年</div>
+        </a>
+        <a href="#job-3" class="block bg-white/10 hover:bg-white/15 transition backdrop-blur rounded-xl p-3.5 border border-white/15">
+          <div class="text-xs text-amber-300 font-semibold">🥉 技术低竞争比（T1）</div>
+          <div class="text-base sm:text-lg font-black text-white mt-0.5">市审计中心 · 大数据审计</div>
+          <div class="text-[11px] text-indigo-200 mt-0.5">市直大平台 · 仅 60:1 · 出差加班多</div>
+        </a>
+        <a href="#job-6" class="block bg-white/10 hover:bg-white/15 transition backdrop-blur rounded-xl p-3.5 border border-white/15">
+          <div class="text-xs text-teal-300 font-semibold">🎯 全场最低竞争比（T2）</div>
+          <div class="text-base sm:text-lg font-black text-white mt-0.5">新津人社 · 综合管理</div>
+          <div class="text-[11px] text-indigo-200 mt-0.5">七级管理及以下 · 仅 47:1 · 求稳黑马</div>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 pb-20 space-y-10 relative z-20">
+
+    <!-- 站点导航栏 -->
+    <div class="no-print flex flex-wrap items-center justify-between gap-3 bg-white px-5 py-3.5 rounded-xl shadow-sm border border-slate-200 text-xs sm:text-sm">
+      <span class="text-slate-500 font-medium">当前位置：<strong class="text-indigo-600">2026下半年成都市事业单位 11 岗位评估</strong></span>
+      <div class="flex flex-wrap items-center gap-3">
+        <a href="index.html" class="inline-flex items-center gap-1.5 text-indigo-600 hover:text-indigo-800 font-bold transition-colors">
+          <i class="fa-solid fa-arrow-left"></i> 四川省考岗位看板
+        </a>
+        <span class="text-slate-300">|</span>
+        <a href="exam-deepdive.html" class="inline-flex items-center gap-1.5 text-slate-600 hover:text-indigo-700 font-semibold transition-colors">
+          <i class="fa-solid fa-file-signature"></i> 行政执法卷剖析
+        </a>
+        <span class="text-slate-300">|</span>
+        <a href="sprint-question-bank.html" class="inline-flex items-center gap-1.5 text-emerald-700 hover:text-emerald-900 font-semibold transition-colors">
+          <i class="fa-solid fa-book-bookmark"></i> 冲刺题库
+        </a>
+      </div>
+    </div>
+
+    <!-- 模块 A: 2026下半年成都统考政策与核实摘要 -->
+    <section class="bg-white rounded-2xl p-6 sm:p-7 shadow-sm border border-slate-200/80">
+      <div class="flex flex-wrap items-center justify-between gap-3 mb-5">
+        <div class="flex items-center gap-3">
+          <span class="w-9 h-9 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold text-base shadow-sm">
+            <i class="fa-solid fa-scale-balanced"></i>
+          </span>
+          <div>
+            <h2 class="text-lg sm:text-xl font-bold text-slate-900">2026年下半年成都市统考核心政策与联网核实摘要</h2>
+            <p class="text-xs text-slate-500">基于四川人事考试网、成都市人社局及区县公告规则，避开报考资格与服务期陷阱</p>
+          </div>
+        </div>
+        <span class="text-xs bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full font-semibold border border-indigo-100">川人社规〔2024〕3号适用</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-xs">
+        <div class="bg-slate-50 rounded-xl p-4 border border-slate-200/80">
+          <div class="font-bold text-slate-900 mb-1.5 flex items-center gap-1.5">
+            <i class="fa-solid fa-pen-to-square text-indigo-600"></i> 笔试科目与算分
+          </div>
+          <p class="text-slate-600 leading-relaxed">
+            综合类考<strong>《公共基础知识》50% + 《综合能力测试》50%</strong>（非全国联考职测/综应）。开考比通常 <strong>3:1</strong>，进面 <strong>3:1 或 5:1</strong>，总成绩主流按<strong>笔试 50% + 面试 50%</strong>合成。
+          </p>
+        </div>
+
+        <div class="bg-slate-50 rounded-xl p-4 border border-slate-200/80">
+          <div class="font-bold text-slate-900 mb-1.5 flex items-center gap-1.5">
+            <i class="fa-solid fa-id-card text-sky-600"></i> 年龄与公益属性
+          </div>
+          <p class="text-slate-600 leading-relaxed">
+            本科一般限 <strong>1987.11.19 及以后出生</strong>（38周岁及以下），研究生放宽至 <strong>1982.11.19 及以后</strong>（退役军人再放宽2岁）。11个单位均属<strong>公益一类</strong>全额拨款。
+          </p>
+        </div>
+
+        <div class="bg-amber-50/70 rounded-xl p-4 border border-amber-200">
+          <div class="font-bold text-amber-900 mb-1.5 flex items-center gap-1.5">
+            <i class="fa-solid fa-triangle-exclamation text-amber-600"></i> 服务期与“不得流调动”
+          </div>
+          <p class="text-amber-900/90 leading-relaxed">
+            已核实：<strong>金堂投促(201014022001)</strong>明确“服务期5年，不得流(调)动”；<strong>武侯人才(201006003004)</strong>热评及区属惯例含5年服务期；<strong>龙泉中小企业(201008098001)</strong>热评反馈限制考公及调动，务必在《岗位表》备注栏终核。
+          </p>
+        </div>
+
+        <div class="bg-rose-50/70 rounded-xl p-4 border border-rose-200">
+          <div class="font-bold text-rose-900 mb-1.5 flex items-center gap-1.5">
+            <i class="fa-solid fa-ban text-rose-600"></i> 通用“不得报考”红线
+          </div>
+          <p class="text-rose-900/90 leading-relaxed">
+            未满5年（含试用期）的新录用公务员/参公、未满5年的四川乡镇事业编、处于试用期或最低服务期内的在编人员<strong>不得报考</strong>；在编教师报考须经学校及主管部门同意。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 模块 B: 11 大候选岗位交互式横向全景对比表 -->
+    <section class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200/80">
+      <div class="flex flex-wrap items-center justify-between gap-3 mb-5">
+        <div class="flex items-center gap-3">
+          <span class="w-9 h-9 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold text-base shadow-sm">
+            <i class="fa-solid fa-table-list"></i>
+          </span>
+          <div>
+            <h2 class="text-lg sm:text-xl font-bold text-slate-900">11 大候选岗位优先级排名与关键参数全景表</h2>
+            <p class="text-xs text-slate-500">支持按梯队、岗类、圈层筛选，或按推荐优先级 / 实时报录比 / 招录人数动态排序；点击岗位名直达 8 维详评</p>
+          </div>
+        </div>
+        <span id="visible-count" class="text-xs bg-slate-100 text-slate-700 px-3 py-1 rounded-full font-semibold">显示 11 / 11 个岗位</span>
+      </div>
+
+      <!-- 交互过滤与排序栏 -->
+      <div class="no-print bg-slate-50 rounded-xl p-4 border border-slate-200 mb-5 space-y-3">
+        <div class="flex flex-wrap items-center gap-2 text-xs">
+          <span class="font-bold text-slate-600 mr-1"><i class="fa-solid fa-layer-group mr-1"></i>梯队：</span>
+          <button onclick="setFilter('tier', 'all', this)" class="filter-btn active px-2.5 py-1 rounded-lg border border-slate-200 bg-white font-semibold transition">全部 (11)</button>
+          <button onclick="setFilter('tier', 'T1', this)" class="filter-btn px-2.5 py-1 rounded-lg border border-slate-200 bg-white font-semibold transition">T1 首选冲刺 (3)</button>
+          <button onclick="setFilter('tier', 'T2', this)" class="filter-btn px-2.5 py-1 rounded-lg border border-slate-200 bg-white font-semibold transition">T2 强区/求稳 (3)</button>
+          <button onclick="setFilter('tier', 'T3', this)" class="filter-btn px-2.5 py-1 rounded-lg border border-slate-200 bg-white font-semibold transition">T3 慎选评估 (4)</button>
+          <button onclick="setFilter('tier', 'T4', this)" class="filter-btn px-2.5 py-1 rounded-lg border border-slate-200 bg-white font-semibold transition">T4 垫底避坑 (1)</button>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-between gap-3 text-xs">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="font-bold text-slate-600 mr-1"><i class="fa-solid fa-filter mr-1"></i>岗类：</span>
+            <select id="type-filter" onchange="applyFilters()" class="rounded-lg border border-slate-300 bg-white px-2.5 py-1.5 text-xs font-medium text-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+              <option value="all">全部岗类</option>
+              <option value="专技">专业技术岗 (3)</option>
+              <option value="管理">管理岗 (8)</option>
+            </select>
+
+            <span class="font-bold text-slate-600 ml-2 mr-1"><i class="fa-solid fa-location-dot mr-1"></i>圈层：</span>
+            <select id="zone-filter" onchange="applyFilters()" class="rounded-lg border border-slate-300 bg-white px-2.5 py-1.5 text-xs font-medium text-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+              <option value="all">全部圈层</option>
+              <option value="core">市直 / 一圈层主城 (4)</option>
+              <option value="tier2">二圈层 · 龙泉驿 (4)</option>
+              <option value="tier3">三圈层 · 新津 / 金堂 (3)</option>
+            </select>
+
+            <span class="font-bold text-slate-600 ml-2 mr-1"><i class="fa-solid fa-arrow-down-short-wide mr-1"></i>排序：</span>
+            <select id="sort-select" onchange="applyFilters()" class="rounded-lg border border-slate-300 bg-white px-2.5 py-1.5 text-xs font-medium text-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+              <option value="rank">按推荐优先级 (1 → 11)</option>
+              <option value="ratio">按实时报录比 (低 → 高)</option>
+              <option value="quota">按招录人数 (多 → 少)</option>
+            </select>
+          </div>
+
+          <div class="relative w-full sm:w-56">
+            <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-slate-400"></i>
+            <input id="search-input" oninput="applyFilters()" type="text" placeholder="搜单位、岗位、代码、区县..." class="w-full pl-8 pr-3 py-1.5 rounded-lg border border-slate-300 bg-white text-xs focus:outline-none focus:ring-2 focus:ring-indigo-500">
+          </div>
+        </div>
+      </div>
+
+      <!-- 对比表格 -->
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs border-collapse">
+          <thead>
+            <tr class="bg-slate-100 text-slate-700 font-bold">
+              <th class="p-3 rounded-l-lg whitespace-nowrap">顺位 / 梯队</th>
+              <th class="p-3 min-w-[200px]">招考岗位 &amp; 单位</th>
+              <th class="p-3 whitespace-nowrap">圈层 / 地点</th>
+              <th class="p-3 whitespace-nowrap">岗位性质（已核）</th>
+              <th class="p-3 bg-indigo-50/80 text-indigo-900 whitespace-nowrap border-l border-indigo-100">招录 / 缴费（报录比）</th>
+              <th class="p-3 min-w-[165px]">专业要求 &amp; 风险标注</th>
+              <th class="p-3 whitespace-nowrap">参考进面分</th>
+              <th class="p-3 rounded-r-lg whitespace-nowrap">预估全包年薪</th>
+            </tr>
+          </thead>
+          <tbody id="summary-tbody" class="divide-y divide-slate-100 text-slate-600">
+            <!-- JS 渲染 -->
+          </tbody>
+        </table>
+      </div>
+      <p class="text-[11px] text-slate-400 mt-3 leading-relaxed">
+        注：①“缴费人数”为 2026-11-27 09:22–09:38 截屏数据（距 18:00 截止前仍会上涨，尤其是“专业不限”岗位）；②“参考进面分”为 2024–2025 年成都同圈层/同类岗位笔试折合总分经验区间（官方未公开逐岗精确历史线）；③“预估全包年薪”含基本工资、规范津补贴、绩效及双边公积金（新入职初级/九级管理口径）。
+      </p>
+    </section>
+
+    <!-- 模块 C: 11 大岗位 8 维度逐一深度详评（可检索、高亮直达） -->
+    <section class="space-y-5">
+      <div class="flex flex-wrap items-center justify-between gap-3 px-1">
+        <div class="flex items-center gap-3">
+          <span class="w-9 h-9 rounded-xl bg-amber-500 text-white flex items-center justify-center font-bold text-base shadow-sm">
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+          </span>
+          <div>
+            <h2 class="text-xl font-bold text-slate-900">11 大岗位 8 维度逐一深度拆解（按优先级 1 → 11 排序）</h2>
+            <p class="text-xs text-slate-500">每张卡片完整覆盖 1*岗位职责 2*单位职能 3*公益性质 4*工作地点 5*加班情况 6*岗位发展 7*报考难度与参考分 8*收入情况</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="detail-cards" class="space-y-5">
+        <!-- JS 渲染 11 张 8 维详评卡片 -->
+      </div>
+    </section>
+
+    <!-- 模块 D: 决策树与不同考生画像策略 -->
+    <section class="bg-slate-900 text-white rounded-2xl p-6 sm:p-8 shadow-xl">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="w-9 h-9 rounded-xl bg-amber-400 text-slate-900 flex items-center justify-center font-bold text-base shadow-sm">
+          <i class="fa-solid fa-sitemap"></i>
+        </span>
+        <div>
+          <h2 class="text-xl font-bold text-white">不同考生画像的最终选岗决策指南</h2>
+          <p class="text-xs text-slate-400">结合自身模考水平、专业背景与职业规划（是否继续考公/能否接受出差或5年服务期）做最终定夺</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+        <div class="bg-white/10 border border-emerald-400/30 rounded-xl p-4 flex flex-col justify-between">
+          <div>
+            <div class="text-emerald-300 font-bold text-sm mb-1.5">场景 1：追求主城稳定 + 职称涨薪</div>
+            <p class="text-slate-300 leading-relaxed mb-3">
+              计算机/数据专业，模考能稳在 <strong>70 分+</strong>，看重主城生活便利、少出差、不希望被管理岗职数卡死。
+            </p>
+          </div>
+          <div class="bg-emerald-500/20 border border-emerald-400/30 rounded-lg p-2.5 text-emerald-200 font-bold">
+            👉 首选 #1 青羊区疾控中心（信息技术）<br>次选 #2 武侯人才（专技十级、限5年）
+          </div>
+        </div>
+
+        <div class="bg-white/10 border border-sky-400/30 rounded-xl p-4 flex flex-col justify-between">
+          <div>
+            <div class="text-sky-300 font-bold text-sm mb-1.5">场景 2：抗压能出差 + 冲市直平台</div>
+            <p class="text-slate-300 leading-relaxed mb-3">
+              计算机/软件工程专业，年轻能接受频繁出差和项目制加班，想用更低的竞争比上岸<strong>市直大单位专技岗</strong>。
+            </p>
+          </div>
+          <div class="bg-sky-500/20 border border-sky-400/30 rounded-lg p-2.5 text-sky-200 font-bold">
+            👉 强烈关注 #3 成都市审计中心<br>（大数据审计 · 60:1 · 无服务期陷阱）
+          </div>
+        </div>
+
+        <div class="bg-white/10 border border-amber-400/30 rounded-xl p-4 flex flex-col justify-between">
+          <div>
+            <div class="text-amber-300 font-bold text-sm mb-1.5">场景 3：求稳保底上岸（63–69分）</div>
+            <p class="text-slate-300 leading-relaxed mb-3">
+              想先稳稳拿编制、不愿和主城百里挑一硬拼，接受三圈层近郊且喜欢朝九晚五人社档案服务工作。
+            </p>
+          </div>
+          <div class="bg-amber-500/20 border border-amber-400/30 rounded-lg p-2.5 text-amber-200 font-bold">
+            👉 性价比黑马 #6 新津区人社中心<br>（综合管理 · 仅 47:1 · 全场最低）
+          </div>
+        </div>
+
+        <div class="bg-white/10 border border-rose-400/30 rounded-xl p-4 flex flex-col justify-between">
+          <div>
+            <div class="text-rose-300 font-bold text-sm mb-1.5">场景 4：重点避坑与慎选警示</div>
+            <p class="text-slate-300 leading-relaxed mb-3">
+              未来还想考公务员/选调、或不想去远郊三不限卷高分的考生，需高度警惕死锁服务期条款。
+            </p>
+          </div>
+          <div class="bg-rose-500/20 border border-rose-400/30 rounded-lg p-2.5 text-rose-200 font-bold">
+            ⚠️ 慎报 #10 龙泉中小企业（限流调/考公）<br>⚠️ 垫底 #11 金堂投促（已查实5年不得流调）
+          </div>
+        </div>
+      </div>
+
+      <!-- 交互式临门一脚核查清单 -->
+      <div class="mt-6 bg-white/5 border border-white/10 rounded-xl p-4">
+        <div class="text-sm font-bold text-amber-300 mb-2.5 flex items-center gap-2">
+          <i class="fa-solid fa-list-check"></i> 今日 18:00 截止前 · 临门一脚自查清单（可勾选）
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs text-slate-300">
+          <label class="flex items-start gap-2 cursor-pointer select-none bg-white/5 p-2.5 rounded-lg hover:bg-white/10 transition">
+            <input type="checkbox" class="mt-0.5 accent-amber-400 rounded">
+            <span><strong>15:00 前提交报名</strong>：预留资格初审反馈时间，避免卡 17:30 后提交审核退回无修改窗口。</span>
+          </label>
+          <label class="flex items-start gap-2 cursor-pointer select-none bg-white/5 p-2.5 rounded-lg hover:bg-white/10 transition">
+            <input type="checkbox" class="mt-0.5 accent-amber-400 rounded">
+            <span><strong>核对《岗位表》备注栏</strong>：确认武侯(5年)、龙泉(是否禁考公)、成华(是否限党员/夜班)具体措辞。</span>
+          </label>
+          <label class="flex items-start gap-2 cursor-pointer select-none bg-white/5 p-2.5 rounded-lg hover:bg-white/10 transition">
+            <input type="checkbox" class="mt-0.5 accent-amber-400 rounded">
+            <span><strong>严格核对专业代码</strong>：对照毕业证专业名称与《岗位表》括号内二级/一级学科代码一字不差。</span>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- 模块 E: 成都各圈层事业编待遇与分数梯度对比 -->
+    <section class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200/80">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="w-9 h-9 rounded-xl bg-sky-600 text-white flex items-center justify-center font-bold text-base shadow-sm">
+          <i class="fa-solid fa-coins"></i>
+        </span>
+        <div>
+          <h2 class="text-lg sm:text-xl font-bold text-slate-900">成都各圈层事业编：全包薪酬与进面分数梯度参考</h2>
+          <p class="text-xs text-slate-500">基于 2024–2026 年成都规范津补贴后公开薪酬口碑与考情区间整理（初级职称/九级管理刚入职参考口径）</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+        <div class="border border-emerald-200 bg-emerald-50/40 rounded-xl p-4">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-black text-emerald-900 text-sm">一圈层主城（青羊/武侯/成华）</span>
+            <span class="bg-emerald-600 text-white px-2 py-0.5 rounded text-[10px] font-bold">第一梯队</span>
+          </div>
+          <div class="space-y-1.5 text-slate-700">
+            <div>💰 <strong>全包估算</strong>：<span class="text-emerald-700 font-black">15万 – 18万+/年</span></div>
+            <div>🏦 <strong>双边公积金</strong>：约 3000 – 4000 元/月</div>
+            <div>📝 <strong>参考进面分</strong>：70 – 75 分（稳妥 72+）</div>
+            <div class="text-[11px] text-slate-500 pt-1 border-t border-emerald-100">财政稳、生活交通配套极好，主城综合岗竞争历来最激烈。</div>
+          </div>
+        </div>
+
+        <div class="border border-sky-200 bg-sky-50/40 rounded-xl p-4">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-black text-sky-900 text-sm">市直单位（市审计中心）</span>
+            <span class="bg-sky-600 text-white px-2 py-0.5 rounded text-[10px] font-bold">平台最高</span>
+          </div>
+          <div class="space-y-1.5 text-slate-700">
+            <div>💰 <strong>全包估算</strong>：<span class="text-sky-700 font-black">14万 – 17万/年</span></div>
+            <div>🏦 <strong>双边公积金</strong>：约 2800 – 3500 元/月</div>
+            <div>📝 <strong>参考进面分</strong>：68 – 73 分（技术限专业略降）</div>
+            <div class="text-[11px] text-slate-500 pt-1 border-t border-sky-100">市级财政兜底极其规范，另有出差差旅补助，平台与职业上限高。</div>
+          </div>
+        </div>
+
+        <div class="border border-indigo-200 bg-indigo-50/40 rounded-xl p-4">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-black text-indigo-900 text-sm">二圈层经开区（龙泉驿）</span>
+            <span class="bg-indigo-600 text-white px-2 py-0.5 rounded text-[10px] font-bold">二圈层前列</span>
+          </div>
+          <div class="space-y-1.5 text-slate-700">
+            <div>💰 <strong>全包估算</strong>：<span class="text-indigo-700 font-black">13万 – 16万/年</span></div>
+            <div>🏦 <strong>双边公积金</strong>：约 2800 – 3500 元/月</div>
+            <div>📝 <strong>参考进面分</strong>：67 – 72 分</div>
+            <div class="text-[11px] text-slate-500 pt-1 border-t border-indigo-100">经开区工业基础强，在二圈层中待遇靠前；近年规范补贴后回归理性。</div>
+          </div>
+        </div>
+
+        <div class="border border-slate-200 bg-slate-50 rounded-xl p-4">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-black text-slate-900 text-sm">三圈层（新津 / 金堂）</span>
+            <span class="bg-slate-600 text-white px-2 py-0.5 rounded text-[10px] font-bold">求稳门槛低</span>
+          </div>
+          <div class="space-y-1.5 text-slate-700">
+            <div>💰 <strong>全包估算</strong>：新津 <strong>12–14万</strong> / 金堂 <strong>10–12万</strong></div>
+            <div>🏦 <strong>双边公积金</strong>：1500 – 2600 元/月</div>
+            <div>📝 <strong>参考进面分</strong>：62 – 70 分</div>
+            <div class="text-[11px] text-slate-500 pt-1 border-t border-slate-200">新津近郊性价比优；金堂远郊待遇相对最低且三不限易涌入高分考生。</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="text-center py-6 px-4 text-xs text-slate-400 border-t border-slate-200">
+    2026年下半年成都市事业单位 11 岗位 8 维评估决策看板 · 数据截至 2026-11-27 09:38（最终报考条件及人数以四川省人事考试专栏官方公告为准）
+  </footer>
+
+  <script>
+    const jobsData = [
+      {
+        rank: 1,
+        tier: 'T1',
+        tierLabel: 'T1 首选推荐',
+        zone: 'core',
+        zoneLabel: '一圈层 · 青羊区',
+        jobCategory: '专技',
+        title: '信息技术',
+        unit: '成都市青羊区疾病预防控制中心（成都市青羊区卫生监督所）',
+        code: '201004145003',
+        quota: 1,
+        paid: 128,
+        natureDetail: '专业技术十二级岗位及以下（有编制）',
+        welfareType: '公益一类（财政全额拨款）',
+        location: '成都市青羊区（参考主办公址：青羊区蜀鑫路130号，西三环内外侧、主城生活便利）',
+        major: '本：计算机科学与技术、数据科学与大数据技术；研：计算机应用技术、计算机软件与理论',
+        riskTags: [
+          { text: '专技可评职称', color: 'emerald' },
+          { text: '平时运维较规律', color: 'sky' }
+        ],
+        scoreRef: '70–75 分',
+        incomeRef: '15万–18万+',
+        dutiesJob: '负责单位内部局域网与硬件运维、传染病直报/免疫规划/卫生监督等业务系统的账号权限管理与技术保障、数据统计汇总及信息化项目对接采购。',
+        dutiesUnit: '青羊区卫健系统核心公共卫生技术机构（疾控中心与卫生监督所合署后，统筹全区传染病/慢病防控、突发公卫事件应急处置、实验室检测及卫生监督执法技术支撑）。',
+        overtime: '平时较规律，应急时高强度。日常 IT 运维基本能准点下班；仅在突发公共卫生事件应急流调、迎检或智慧疾控项目验收期间需阶段性加班。',
+        growth: '专技通道优势显著：可按周期评助理工程师→中级→副高职称，不受管理岗正副科职数限制即可涨薪；不足在于信息科属后勤辅助科室，行政晋升及正高名额会向检验/流病等核心公卫科室倾斜，且长期偏运维不利于回流互联网企业。',
+        difficultyDesc: '专业卡得较精准，挡掉大量文科与“三不限”考生；2026年青羊区下半年共公招407名，本岗招1人已有128人缴费（128:1）。青羊主城同类技术岗参考进面折合分约 70–75 分。',
+        incomeDesc: '一圈层主城财政保障稳健，初入职/初级职称全口径年收入（含基本工资、绩效、年终目标奖及双边公积金）约 15万–18万元/年，双边公积金约 3000–4000 元/月，评出中级职称后还会上浮。',
+        conclusion: '主城一圈层 + 专技十二级职称通道 + 平时工作强度相对温和，兼顾了待遇体面与生活品质，综合性价比全场最高。'
+      },
+      {
+        rank: 2,
+        tier: 'T1',
+        tierLabel: 'T1 强力竞争',
+        zone: 'core',
+        zoneLabel: '一圈层 · 武侯区',
+        jobCategory: '专技',
+        title: '信息技术服务',
+        unit: '武侯区人才发展中心',
+        code: '201006003004',
+        quota: 4,
+        paid: 549,
+        natureDetail: '专业技术十级岗位及以下（联网已核，有编制）',
+        welfareType: '公益一类（财政全额拨款）',
+        location: '成都市武侯区武科西五路360号西部智谷B区（武侯区政务服务中心旁）',
+        major: '本：电子信息类(0807)、自动化类(0808)、计算机类(0809)；研：电子/计算机/信通/控制/软件/电子信息',
+        riskTags: [
+          { text: '专技十级及以下', color: 'emerald' },
+          { text: '招4人容错高', color: 'sky' },
+          { text: '热评：限5年服务期', color: 'amber' }
+        ],
+        scoreRef: '70–75 分',
+        incomeRef: '15万–18万+',
+        dutiesJob: '承担全区人才认定申报评审系统、线上招聘平台、人才大数据统计分析及智慧人社相关信息化系统的技术运维、需求对接与服务保障。',
+        dutiesUnit: '武侯区人才强区工作与人社公共服务下属事业单位，主要负责高层次人才引进培育、政企校地人才合作、流动人员人事档案及公共人才服务。',
+        overtime: '中等偏温和，呈活动周期性。无夜间执勤或长途出差；在大型引才招聘会、高层次人才集中评审或平台升级节点前后会有阶段性加班。',
+        growth: '联网核实为“专业技术十级岗位及以下”（起点包含中级职称对应十级岗位，通道极佳）；人社/人才系统政策灵通、接触企业高校资源多。关键制约在于武侯区公招常规要求在区最低服务期5年（含试用期），截屏热评亦印证“限制5年”，短期内不易考公或调离。',
+        difficultyDesc: '招录 4 人使入围机会更分散（按3:1至少12人进面），但专业放宽至电子信息+自动化+计算机三大工科，截屏已达 549 人缴费（137.25:1）。主城武侯区参考进面折合分约 70–75 分。',
+        incomeDesc: '一圈层强区武侯标准，全包年收入约 15万–18万元/年，双边公积金约 3000–4000 元/月，十级专技可衔接中级职称待遇。',
+        conclusion: '若你能接受扎根武侯区满 5 年且看重“专技十级及以下 + 招4人高容错”，本岗与第1名几乎并列最优；若计划短期考公跳槽，则优先第1名。'
+      },
+      {
+        rank: 3,
+        tier: 'T1',
+        tierLabel: 'T1 技术冲刺',
+        zone: 'core',
+        zoneLabel: '市直 · 高新区',
+        jobCategory: '专技',
+        title: '大数据审计',
+        unit: '成都市审计中心（成都市审计局所属）',
+        code: '201002018001',
+        quota: 2,
+        paid: 120,
+        natureDetail: '专业技术十二级岗位及以下（有编制）',
+        welfareType: '公益一类（财政全额拨款，市审计局二级预算单位）',
+        location: '成都市高新区锦城大道366号（市政府第三办公区，南门核心区）',
+        major: '本：计算机科学与技术(080901)、软件工程(080902)、电子与计算机工程(080909T)；研：计算机(0812)、软件(0835)',
+        riskTags: [
+          { text: '报录比仅 60:1', color: 'emerald' },
+          { text: '市直大平台', color: 'indigo' },
+          { text: '加班多 · 常年出差', color: 'rose' }
+        ],
+        scoreRef: '68–73 分',
+        incomeRef: '14万–17万',
+        dutiesJob: '运用数据库、SQL、Python 及大数据分析平台对市级财政预算、国资投资及政府投资工程的海量财务与业务数据进行比对筛查，锁定审计疑点并支持专项审计。',
+        dutiesUnit: '成都市审计局直属二级事业单位（原成都市财政投资和国资投资项目审计中心），承担市级财政投资与国资项目预决算审计、工程造价核查与大数据审计技术支撑。',
+        overtime: '加班较普遍、出差较多（最大扣分项）。审计项目有刚性法定节点，出报告阶段常赶工；且需跟随审计组前往各区县或被审计单位现场盘点、抽凭、驻场取证。截屏热评亦直言“加班很多，常年出差”。',
+        growth: '市直核心强局平台起点全场最高，专技十二级起步可正常评中/副高职称，积累的财政政务大数据实战经验在体制内认可度极高，尚未查见额外5年流调动锁死条款。',
+        difficultyDesc: '出自《2026下半年成都市属事业单位公开招聘387名工作人员公告》。限计算机/软件核心专业且招2人，截屏仅120人缴费（60:1，全场第二低！），市直技术岗参考进面分约 68–73 分。',
+        incomeDesc: '市级财政兜底极其规范，全包约 14万–17万元/年，双边公积金约 2800–3500 元/月；出差期间按规定另有合规差旅食宿补助。',
+        conclusion: '论“市直平台 + 专技通道 + 60:1上岸难度”，性价比极佳；唯一取决于你是否年轻、能接受频繁市内/省内出差与审计旺季加班。'
+      },
+      {
+        rank: 4,
+        tier: 'T2',
+        tierLabel: 'T2 主城党委口',
+        zone: 'core',
+        zoneLabel: '一圈层 · 成华区',
+        jobCategory: '管理',
+        title: '网络安全管理',
+        unit: '成都市成华区互联网信息中心',
+        code: '未截代码（成华区公招）',
+        quota: 1,
+        paid: 125,
+        natureDetail: '管理岗（有编制）',
+        welfareType: '公益一类（区委宣传部/区委网信办下属）',
+        location: '成都市成华区（随区委宣传部/区委网信办在成华区级党政办公区或新经济服务中心办公）',
+        major: '截图未截取招考条件页（通常限计算机/网安/信息安全等，具体请核对成华区岗位表）',
+        riskTags: [
+          { text: '党委网信平台', color: 'indigo' },
+          { text: '管理岗无职称通道', color: 'amber' },
+          { text: '舆情/网安夜班值守', color: 'rose' }
+        ],
+        scoreRef: '70–74 分',
+        incomeRef: '15万–18万+',
+        dutiesJob: '负责辖区网络安全态势监测、等保/攻防演练组织协调、网络舆情巡查研判、政务新媒体技术把关及涉网突发事件应急处置。',
+        dutiesUnit: '成华区委网信办/宣传部体系下属事业单位，承担区域网络安全技术保障、互联网信息内容管理、舆情监测引导及不良信息举报处理。',
+        overtime: '较高强度 + 轮流值班。互联网舆情与网络安全 7×24 小时运转，网信中心普遍存在夜间/周末/节假日轮班值守、敏感节点全员盯防及突发舆情紧急写专报的压力。',
+        growth: '管理岗在二级事业单位晋升较慢（正副科职数极少，无法像专技岗靠职称涨薪）；优势在于属党委网信序列，政治站位高，文字与应急统筹能力锻炼快，后续参与机关借调或考公较有履历优势。',
+        difficultyDesc: '单招 1 人已有 125 人缴费（125:1），主城成华区竞争烈度高，参考进面分约 70–74 分。提示：部分网信岗可能要求中共党员，务必核对原表。',
+        incomeDesc: '一圈层主城成华区标准，全包约 15万–18万元/年（双边公积金约 3000–4000 元/月），管理九级/八级起步，后期涨幅不如专技岗灵活。',
+        conclusion: '平台好、待遇高，但“管理岗天花板 + 网信轮班精神紧绷”使其整体舒适度明显低于前3个专技岗。'
+      },
+      {
+        rank: 5,
+        tier: 'T2',
+        tierLabel: 'T2 强区人社',
+        zone: 'tier2',
+        zoneLabel: '二圈层 · 龙泉驿区',
+        jobCategory: '管理',
+        title: '人事人才管理B',
+        unit: '成都市龙泉驿区人才交流培训与人事考试中心',
+        code: '201008104002',
+        quota: 1,
+        paid: 142,
+        natureDetail: '七级管理岗位及以下（有编制）',
+        welfareType: '公益一类（龙泉驿区人社局下属）',
+        location: '成都市龙泉驿区长柏路248号',
+        major: '本：中国语言文学类(0501)、计算机类(0809)、电子信息类(0807)、工商管理类(1202)、公共管理类(1204)等',
+        riskTags: [
+          { text: '二圈层财政强区', color: 'indigo' },
+          { text: '考试季周末连轴', color: 'amber' },
+          { text: '报录比全场最高 142:1', color: 'rose' }
+        ],
+        scoreRef: '67–72 分',
+        incomeRef: '13万–16万',
+        dutiesJob: '承担流动人员人事档案接收转递、人才招聘与培训活动组织，以及全区公务员/事业编/职称考试的考务统筹、保密押运与考场安排。',
+        dutiesUnit: '龙泉驿区人社局所属中心，服务全区公共就业、人才交流培训及各类人事考录组织实施。',
+        overtime: '平时正常双休为主，考试季极忙。每逢省考、事业编统考或大型资格考试季，考前几周及周末全员组考加班，且人事考试属“零差错”高压业务。',
+        growth: '七级管理岗及以下（本科入职定九级、硕士定八级，七级即正科在中心职数少、竞争大）；优势是熟知全区人事编制考录政策、对接部门广，便于后续关注区内外遴选。',
+        difficultyDesc: '专业跨度极大（中文+计算机+电子+管理），招1人截屏已缴费 142 人（142:1，全场最高报录比！）。龙泉热门岗参考进面分约 67–72 分。',
+        incomeDesc: '龙泉驿（经开区）在二圈层中待遇领跑，规范津补贴后全包仍约 13万–16万元/年（双边公积金约 2800–3500 元/月）。',
+        conclusion: '单位规范、龙泉待遇好，但 142:1 卷度居全场之首，且考务责任重，需核查龙泉驿岗位表是否附带“服务期5年不得流调动”。'
+      },
+      {
+        rank: 6,
+        tier: 'T2',
+        tierLabel: 'T2 求稳黑马',
+        zone: 'tier3',
+        zoneLabel: '三圈层 · 新津区',
+        jobCategory: '管理',
+        title: '综合管理',
+        unit: '成都市新津区人力资源服务中心',
+        code: '201017005001',
+        quota: 1,
+        paid: 47,
+        natureDetail: '七级管理岗位及以下（联网已核，有编制）',
+        welfareType: '公益一类（新津区人社局下属）',
+        location: '成都市新津区普兴街道山河村4组20号（地铁10号线可达新津，近天府新区南延）',
+        major: '本：法学、会计学、审计学、计算机科学与技术、汉语言文学、网络空间安全（研对应一级学科）',
+        riskTags: [
+          { text: '全场最低 47:1', color: 'emerald' },
+          { text: '七级管理及以下', color: 'sky' },
+          { text: '业务规律少夜班', color: 'emerald' }
+        ],
+        scoreRef: '63–69 分',
+        incomeRef: '12万–14万',
+        dutiesJob: '负责流动人员人事档案管理与政审查档、招聘对接、就业创业政策咨询服务及中心综合文秘/财务/法务内勤保障。',
+        dutiesUnit: '新津区人社局下属公共人力资源服务机构，承担全区就业促进、人才交流、人力资源市场及人事档案基础公共服务。',
+        overtime: '较少，作息较规律。无野外执法或24小时轮值夜班，主要按工作日受理窗口及档案业务，遇大型招聘会时偶有阶段性加班。',
+        growth: '联网核实为“七级管理岗位及以下、面向全国招聘”；二级中心管理职数虽有限，但平时工作节奏舒适，留有充足精力备考上级遴选/考公或兼顾家庭。',
+        difficultyDesc: '专业虽涵盖6个常用专业，但截止截屏时仅 47 人缴费（47:1，全场最低！）。三圈层近郊参考进面分约 63–69 分，上岸难度明显低于主城与龙泉。',
+        incomeDesc: '新津属三圈层近郊（受天府新区辐射），全包年收入约 12万–14万元/年（双边公积金约 2000–2600 元/月），在当地房价与生活成本下性价比较高。',
+        conclusion: '如果是“先稳稳上岸拿编制”思路，这是 11 个岗位中性价比最高、阻力最小的黑马选择（报前自查备注栏有无5年服务期）。'
+      },
+      {
+        rank: 7,
+        tier: 'T3',
+        tierLabel: 'T3 常规政务',
+        zone: 'tier3',
+        zoneLabel: '三圈层 · 新津区',
+        jobCategory: '管理',
+        title: '综合管理',
+        unit: '成都市新津区政务服务推进中心',
+        code: '201017008001',
+        quota: 1,
+        paid: 106,
+        natureDetail: '七级管理岗位及以下（联网已核，有编制）',
+        welfareType: '公益一类（新津区行政审批/政务服务系统）',
+        location: '成都市新津区五津街道迎宾大道234号（新津区政务服务中心）',
+        major: '本：法学、汉语言文学、公共管理类、电子信息类、计算机类（研对应扩大至网安/电子信息等）',
+        riskTags: [
+          { text: '七级管理及以下', color: 'sky' },
+          { text: '同区竞争比2.2倍', color: 'amber' }
+        ],
+        scoreRef: '65–70 分',
+        incomeRef: '12万–14万',
+        dutiesJob: '参与区级政务大厅运行管理、窗口人员日常考核、“一网通办”及“放管服”改革推进、营商环境迎检材料撰写与跨部门协调。',
+        dutiesUnit: '新津区政务服务与行政审批推进保障机构，负责区政务中心大厅运转保障、政务服务标准化建设及便民服务推进。',
+        overtime: '较低至中等。平时基本随政务大厅朝九晚五作息，无夜班；但遇到营商环境考核、政务服务改革督查及汇报材料节点会有加班。',
+        growth: '同样核实为“七级管理岗位及以下”，能接触全区多部门审批流程与企业诉求，协调和公文写作提升快，晋升瓶颈同一般区属二级中心。',
+        difficultyDesc: '专业范围比新津人社更宽（多了公共管理类和整个电子信息大类），目前已有 106 人缴费（106:1），是新津人社（47:1）的两倍多，参考进面分约 65–70 分。',
+        incomeDesc: '同为新津区财政标准，全包约 12万–14万元/年（双边公积金约 2000–2600 元/月）。',
+        conclusion: '工作环境也不错，但待遇完全一样、报录比却翻倍，若同时符合新津人社条件，建议优先选第6名。'
+      },
+      {
+        rank: 8,
+        tier: 'T3',
+        tierLabel: 'T3 城管指挥',
+        zone: 'tier2',
+        zoneLabel: '二圈层 · 龙泉驿区',
+        jobCategory: '管理',
+        title: '综合管理E',
+        unit: '成都市龙泉驿区数字化城市管理监督指挥中心',
+        code: '201008106002',
+        quota: 2,
+        paid: 250,
+        natureDetail: '七级管理岗位及以下（有编制）',
+        welfareType: '公益一类（龙泉驿区城管和综合执法局下属）',
+        location: '成都市龙泉驿区（随区城管和综合执法局或数字城管业务大楼办公）',
+        major: '法学门类(03)、工学门类(08)、管理学门类(12)三大门类（本科学士及以上）',
+        riskTags: [
+          { text: '招2人', color: 'sky' },
+          { text: '工单/排班/迎检多', color: 'amber' }
+        ],
+        scoreRef: '67–72 分',
+        incomeRef: '13万–16万',
+        dutiesJob: '负责“数字城管”平台城市问题采集立案、工单派遣与结案核查、12345热线涉城管投诉转办督办，以及网格化考核报表与综合文秘工作。',
+        dutiesUnit: '龙泉驿区城管和综合执法局下属中心，承担全区数字化城市管理日常监测、指挥调度、“一网统管”数据监督与考核评估。',
+        overtime: '中等偏高。城市运行与市民热线事务极其琐碎、讲究办结时限；部分指挥调度岗需排班值守，节假日、创文创卫及极端天气常需应急值班。',
+        growth: '七级管理岗及以下，工作偏基层调度与大量督办台账，长期容易消耗在重复性工单协调中，晋升空间一般。',
+        difficultyDesc: '三大门类通招（法学/工学/管理学），招2人已有 250 人缴费（125:1），参考进面分约 67–72 分。',
+        incomeDesc: '龙泉驿区标准，全包约 13万–16万元/年（双边公积金约 2800–3500 元/月）。',
+        conclusion: '龙泉驿待遇底座不错且招2人，但城管热线/数字指挥工作繁杂且存在值班概率，排位低于同区人社和主城各岗。'
+      },
+      {
+        rank: 9,
+        tier: 'T3',
+        tierLabel: 'T3 一线保障',
+        zone: 'tier2',
+        zoneLabel: '二圈层 · 龙泉驿区',
+        jobCategory: '管理',
+        title: '综合管理F',
+        unit: '成都市龙泉驿区综合行政执法服务中心',
+        code: '201008107001',
+        quota: 1,
+        paid: 140,
+        natureDetail: '七级管理岗位及以下（有编制）',
+        welfareType: '公益一类（正科级，龙泉驿区城管和综合执法局下属）',
+        location: '成都市龙泉驿区（随区城管和综合执法局统筹办公）',
+        major: '法学门类(03)、工学门类(08)、管理学门类(12)三大门类（本科学士及以上）',
+        riskTags: [
+          { text: '城管一线辅助', color: 'rose' },
+          { text: '节假日/应急加班多', color: 'amber' },
+          { text: '140:1 偏高', color: 'rose' }
+        ],
+        scoreRef: '67–72 分',
+        incomeRef: '13万–16万',
+        dutiesJob: '配合综合执法部门开展市容环境、市政设施、园林绿化、规划建设等领域执法辅助保障、巡查数据汇总、投诉核实及综合内勤事务。',
+        dutiesUnit: '2020年成立的正科级公益一类事业单位，专门为龙泉驿区城管和综合执法工作提供事务性、技术性、辅助性服务保障。',
+        overtime: '较高。综合执法具有全天候属性（夜间施工噪音、占道经营、防汛抢险、市容整治等），常伴随周末及节假日一线保障备勤、迎检材料加班。',
+        growth: '正科级二级单位的七级及以下管理岗，普通岗位晋升窄；一线应急属性偏强，对于追求规律坐班或准备再考公的考生不太友好。',
+        difficultyDesc: '专业范围大、单招 1 人已达 140 人缴费（140:1，仅次于龙泉人事考试），参考进面分约 67–72 分。',
+        incomeDesc: '龙泉驿区标准，全包约 13万–16万元/年（双边公积金约 2800–3500 元/月）。',
+        conclusion: '竞争比高达 140:1 且大概率面临城管执法系统的加班/备勤节奏，投入产出比偏低。'
+      },
+      {
+        rank: 10,
+        tier: 'T3',
+        tierLabel: 'T3 锁死慎选',
+        zone: 'tier2',
+        zoneLabel: '二圈层 · 龙泉驿区',
+        jobCategory: '管理',
+        title: '产业研究',
+        unit: '成都市龙泉驿区中小企业服务中心',
+        code: '201008098001',
+        quota: 1,
+        paid: 132,
+        natureDetail: '七级管理岗位及以下（有编制）',
+        welfareType: '公益一类（龙泉驿区经信局二级预算单位）',
+        location: '成都市龙泉驿区经开区南四路325号（龙泉驿区经济和信息化局办公楼）',
+        major: '经济学门类(02)、理学门类(07)、工学门类(08)（本科学士及以上）',
+        riskTags: [
+          { text: '热评：不得流调动', color: 'rose' },
+          { text: '热评：公务员也不能考', color: 'rose' }
+        ],
+        scoreRef: '66–71 分',
+        incomeRef: '13万–16万',
+        dutiesJob: '开展区域工业与中小企业产业数据分析、行业研究报告撰写、惠企政策宣贯、融资及技术创新对接服务。',
+        dutiesUnit: '龙泉驿区经济和信息化局下属事业单位，承担全区中小企业及民营经济公共服务、企业诉求协调与营商环境优化。',
+        overtime: '中等。无野外倒班，主要加班来自经济指标分析、产业研究材料撰写、助企专班对接及区委区政府专项汇报。',
+        growth: '业务本身不差，但致命扣分项在截屏热评爆出的“不得流调动，打电话说公务员也不能考”（高度吻合龙泉驿5年服务期+禁止流出政策）！七级及以下管理岗若被锁死考公与调动，上升通道几乎被堵死。',
+        difficultyDesc: '专业覆盖经济/理学/工学，招1人已缴费 132 人（132:1），参考进面分约 66–71 分。',
+        incomeDesc: '龙泉驿区标准，全包约 13万–16万元/年（双边公积金约 2800–3500 元/月）。',
+        conclusion: '务必电话（028-84845121）及原表核实“不得考公/调动”条款；若属实，强烈建议后置。若确认无此限制，可升至第 5–6 名区间。'
+      },
+      {
+        rank: 11,
+        tier: 'T4',
+        tierLabel: 'T4 垫底避坑',
+        zone: 'tier3',
+        zoneLabel: '三圈层 · 金堂县',
+        jobCategory: '管理',
+        title: '综合管理岗F',
+        unit: '金堂县投资促进信息服务中心',
+        code: '201014022001',
+        quota: 1,
+        paid: 91,
+        natureDetail: '管理岗位（有编制）',
+        welfareType: '公益一类（财政全额拨款）',
+        location: '成都市金堂县赵镇成金大道2888号（远郊三圈层，距主城约36公里，无直达地铁）',
+        major: '专业不限（三不限，本科及以上，国民教育）',
+        riskTags: [
+          { text: '已核：5年不得流调动', color: 'rose' },
+          { text: '专业不限（三不限）', color: 'amber' },
+          { text: '远郊待遇垫底', color: 'slate' }
+        ],
+        scoreRef: '62–68+ 分',
+        incomeRef: '10万–12万',
+        dutiesJob: '负责招商引资项目信息搜集研判、投资环境推介宣传方案编写、客商对接跟踪及中心日常综合行政文字工作。',
+        dutiesUnit: '金堂县投资促进体系下属事业单位，承担全县招商引资信息服务、投资环境推介及重大招商项目全生命周期服务支撑。',
+        overtime: '偏忙。投促/招商部门通常考核指标压力较大，客商接待、外出推介、项目材料编写及季度冲刺节点加班较多。',
+        growth: '已联网核实岗位代码 201014022001 明确带有“服务期5年，服务期内不得流（调）动”限制！县级管理岗晋升空间窄，叠加远郊地理限制与5年服务期，流动性最差。',
+        difficultyDesc: '专业不限（三不限）是重大隐患！虽然目前缴费仅 91 人（91:1），但截止前最后几小时三不限岗位往往暴增且高分考公选手扎堆，实际进面分可能被拉高至 68–70+ 分。',
+        incomeDesc: '三圈层远郊县金堂标准，全包约 10万–12万元/年（双边公积金约 1500–2200 元/月），为11个岗位中最低一档。',
+        conclusion: '远郊待遇最低 + 已查实5年不得流调动 + 招商考核忙碌 + 三不限隐形高分卷，综合评估建议最后考虑。'
+      }
+    ];
+
+    let activeTier = 'all';
+
+    function getBadgeHtml(tag) {
+      const map = {
+        emerald: 'bg-emerald-100 text-emerald-800 border-emerald-200',
+        sky: 'bg-sky-100 text-sky-800 border-sky-200',
+        indigo: 'bg-indigo-100 text-indigo-800 border-indigo-200',
+        amber: 'bg-amber-100 text-amber-800 border-amber-200',
+        rose: 'bg-rose-100 text-rose-800 border-rose-200',
+        slate: 'bg-slate-100 text-slate-700 border-slate-200'
+      };
+      return `<span class="inline-block px-1.5 py-0.5 rounded text-[10px] font-bold border ${map[tag.color] || map.slate}">${tag.text}</span>`;
+    }
+
+    function getTierStyle(tier) {
+      if (tier === 'T1') return { rowBg: 'bg-emerald-50/30 hover:bg-emerald-50/60', badge: 'bg-emerald-600 text-white', cardBorder: 'border-emerald-300 bg-emerald-50/15', rankBg: 'bg-emerald-600 text-white' };
+      if (tier === 'T2') return { rowBg: 'bg-sky-50/20 hover:bg-sky-50/50', badge: 'bg-indigo-600 text-white', cardBorder: 'border-indigo-200 bg-white', rankBg: 'bg-indigo-600 text-white' };
+      if (tier === 'T3') return { rowBg: 'hover:bg-slate-50', badge: 'bg-slate-600 text-white', cardBorder: 'border-slate-200 bg-white', rankBg: 'bg-slate-600 text-white' };
+      return { rowBg: 'bg-rose-50/30 hover:bg-rose-50/60', badge: 'bg-rose-600 text-white', cardBorder: 'border-rose-300 bg-rose-50/15', rankBg: 'bg-rose-600 text-white' };
+    }
+
+    function setFilter(kind, value, btn) {
+      if (kind === 'tier') {
+        activeTier = value;
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      }
+      applyFilters();
+    }
+
+    function applyFilters() {
+      const cat = document.getElementById('type-filter').value;
+      const zone = document.getElementById('zone-filter').value;
+      const sortBy = document.getElementById('sort-select').value;
+      const q = document.getElementById('search-input').value.trim().toLowerCase();
+
+      let list = jobsData.filter(j => {
+        if (activeTier !== 'all' && j.tier !== activeTier) return false;
+        if (cat !== 'all' && j.jobCategory !== cat) return false;
+        if (zone !== 'all' && j.zone !== zone) return false;
+        if (q) {
+          const hay = `${j.title} ${j.unit} ${j.code} ${j.zoneLabel} ${j.major} ${j.natureDetail}`.toLowerCase();
+          if (!hay.includes(q)) return false;
+        }
+        return true;
+      });
+
+      if (sortBy === 'rank') {
+        list.sort((a, b) => a.rank - b.rank);
+      } else if (sortBy === 'ratio') {
+        list.sort((a, b) => (a.paid / a.quota) - (b.paid / b.quota));
+      } else if (sortBy === 'quota') {
+        list.sort((a, b) => (b.quota - a.quota) || (a.rank - b.rank));
+      }
+
+      renderTable(list);
+      renderCards(list);
+      document.getElementById('visible-count').textContent = `显示 ${list.length} / ${jobsData.length} 个岗位`;
+    }
+
+    function renderTable(list) {
+      const tbody = document.getElementById('summary-tbody');
+      if (!list.length) {
+        tbody.innerHTML = `<tr><td colspan="8" class="p-8 text-center text-slate-400">没有符合当前筛选条件的岗位，请重置筛选项。</td></tr>`;
+        return;
+      }
+      tbody.innerHTML = list.map(j => {
+        const st = getTierStyle(j.tier);
+        const ratio = (j.paid / j.quota).toFixed(1).replace(/\.0$/, '');
+        const ratioColor = (j.paid / j.quota) <= 65 ? 'text-emerald-600' : ((j.paid / j.quota) >= 135 ? 'text-rose-600' : 'text-amber-600');
+        return `
+          <tr class="${st.rowBg} transition-colors">
+            <td class="p-3 whitespace-nowrap">
+              <div class="flex items-center gap-1.5">
+                <span class="w-6 h-6 rounded-full ${st.rankBg} inline-flex items-center justify-center font-black text-xs">${j.rank}</span>
+                <span class="px-1.5 py-0.5 rounded text-[10px] font-bold ${st.badge}">${j.tier}</span>
+              </div>
+            </td>
+            <td class="p-3">
+              <a href="#job-${j.rank}" class="font-bold text-slate-900 hover:text-indigo-600 transition block">
+                ${j.title} <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400 ml-0.5"></i>
+              </a>
+              <div class="text-[11px] text-slate-500 mt-0.5">${j.unit}</div>
+              <div class="text-[10px] text-slate-400 font-mono">代码：${j.code}</div>
+            </td>
+            <td class="p-3 whitespace-nowrap">
+              <div class="font-semibold text-slate-800">${j.zoneLabel}</div>
+              <div class="text-[10px] text-emerald-700 font-medium">公益一类</div>
+            </td>
+            <td class="p-3">
+              <span class="inline-block px-2 py-0.5 rounded font-bold text-[11px] ${j.jobCategory === '专技' ? 'bg-emerald-100 text-emerald-800' : 'bg-slate-100 text-slate-700'}">
+                ${j.jobCategory}岗
+              </span>
+              <div class="text-[10px] text-slate-500 mt-1 max-w-[130px]">${j.natureDetail.replace('（有编制）', '')}</div>
+            </td>
+            <td class="p-3 bg-indigo-50/40 border-l border-indigo-100 whitespace-nowrap">
+              <div class="font-bold text-slate-800">招 ${j.quota} / 缴 ${j.paid}</div>
+              <div class="font-black text-sm ${ratioColor}">${ratio}:1</div>
+            </td>
+            <td class="p-3">
+              <div class="flex flex-wrap gap-1 mb-1">${j.riskTags.map(getBadgeHtml).join('')}</div>
+              <div class="text-[10px] text-slate-500 line-clamp-2" title="${j.major}">${j.major}</div>
+            </td>
+            <td class="p-3 font-bold text-slate-800 whitespace-nowrap">${j.scoreRef}</td>
+            <td class="p-3 font-bold text-indigo-700 whitespace-nowrap">${j.incomeRef}</td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function renderCards(list) {
+      const container = document.getElementById('detail-cards');
+      if (!list.length) {
+        container.innerHTML = `<div class="bg-white rounded-2xl p-10 text-center text-slate-400 border border-slate-200">没有符合筛选条件的岗位。</div>`;
+        return;
+      }
+      container.innerHTML = list.map(j => {
+        const st = getTierStyle(j.tier);
+        const ratio = (j.paid / j.quota).toFixed(1).replace(/\.0$/, '');
+        return `
+          <article id="job-${j.rank}" class="rounded-2xl p-5 sm:p-6 shadow-sm border-2 ${st.cardBorder} transition-all">
+            <!-- Card Header -->
+            <div class="flex flex-wrap items-start justify-between gap-3 pb-4 mb-4 border-b border-slate-200/80">
+              <div class="flex items-start gap-3">
+                <span class="w-9 h-9 rounded-xl ${st.rankBg} flex items-center justify-center font-black text-base shrink-0 shadow-sm">
+                  #${j.rank}
+                </span>
+                <div>
+                  <div class="flex flex-wrap items-center gap-2">
+                    <h3 class="text-lg font-black text-slate-900">${j.title} · ${j.unit}</h3>
+                    <span class="px-2 py-0.5 rounded-full text-[11px] font-bold ${st.badge}">${j.tierLabel}</span>
+                  </div>
+                  <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-slate-500 mt-1">
+                    <span><i class="fa-solid fa-hashtag mr-1 text-slate-400"></i>代码：<strong>${j.code}</strong></span>
+                    <span><i class="fa-solid fa-location-dot mr-1 text-slate-400"></i>${j.zoneLabel}</span>
+                    <span><i class="fa-solid fa-users mr-1 text-slate-400"></i>招 <strong>${j.quota}</strong> 人 · 已缴费 <strong>${j.paid}</strong> 人（<strong>${ratio}:1</strong>）</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-wrap gap-1.5">
+                ${j.riskTags.map(getBadgeHtml).join('')}
+              </div>
+            </div>
+
+            <!-- 8 Dimensions Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+              <div class="bg-slate-50/90 rounded-xl p-3.5 border border-slate-200/70">
+                <div class="font-bold text-indigo-700 mb-1">1* 岗位做什么</div>
+                <p class="text-slate-700 leading-relaxed">${j.dutiesJob}</p>
+              </div>
+              <div class="bg-slate-50/90 rounded-xl p-3.5 border border-slate-200/70">
+                <div class="font-bold text-indigo-700 mb-1">2* 单位做什么</div>
+                <p class="text-slate-700 leading-relaxed">${j.dutiesUnit}</p>
+              </div>
+              <div class="bg-slate-50/90 rounded-xl p-3.5 border border-slate-200/70">
+                <div class="font-bold text-indigo-700 mb-1">3* 岗位性质（公益类别与编制等级）</div>
+                <p class="text-slate-700 leading-relaxed"><strong>${j.welfareType}</strong> · ${j.natureDetail}</p>
+              </div>
+              <div class="bg-slate-50/90 rounded-xl p-3.5 border border-slate-200/70">
+                <div class="font-bold text-indigo-700 mb-1">4* 工作地点</div>
+                <p class="text-slate-700 leading-relaxed">${j.location}</p>
+              </div>
+              <div class="bg-slate-50/90 rounded-xl p-3.5 border border-slate-200/70">
+                <div class="font-bold text-indigo-700 mb-1">5* 加班 / 出差 / 值班情况</div>
+                <p class="text-slate-700 leading-relaxed">${j.overtime}</p>
+              </div>
+              <div class="bg-slate-50/90 rounded-xl p-3.5 border border-slate-200/70">
+                <div class="font-bold text-indigo-700 mb-1">6* 岗位发展与限制条款</div>
+                <p class="text-slate-700 leading-relaxed">${j.growth}</p>
+              </div>
+              <div class="bg-slate-50/90 rounded-xl p-3.5 border border-slate-200/70">
+                <div class="font-bold text-indigo-700 mb-1">7* 报考难度与历史参考分（${j.scoreRef}）</div>
+                <p class="text-slate-700 leading-relaxed">${j.difficultyDesc}<br><span class="text-[11px] text-slate-500">专业要求：${j.major}</span></p>
+              </div>
+              <div class="bg-slate-50/90 rounded-xl p-3.5 border border-slate-200/70">
+                <div class="font-bold text-indigo-700 mb-1">8* 收入情况（预估全包 ${j.incomeRef}）</div>
+                <p class="text-slate-700 leading-relaxed">${j.incomeDesc}</p>
+              </div>
+            </div>
+
+            <!-- Conclusion Bar -->
+            <div class="mt-3.5 bg-indigo-50/80 border border-indigo-200 rounded-xl px-4 py-2.5 text-xs text-indigo-950 font-medium flex items-start gap-2">
+              <span class="shrink-0">🎯</span>
+              <div><strong>综合评价：</strong>${j.conclusion}</div>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    // Initial render
+    applyFilters();
+  </script>
+</body>
+</html>
