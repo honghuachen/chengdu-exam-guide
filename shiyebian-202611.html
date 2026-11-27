@@ -43,6 +43,7 @@
             <i class="fa-regular fa-clock mr-1"></i>报名截止：11月27日 18:00
           </span>
           <span class="bg-amber-400 text-slate-900 px-2.5 py-0.5 rounded-full text-xs font-bold">笔试：12月26日</span>
+          <span class="bg-emerald-400 text-slate-900 px-2.5 py-0.5 rounded-full text-xs font-bold"><i class="fa-solid fa-house mr-1"></i>起点：嘉祥瑞庭南城</span>
           <span class="bg-sky-400 text-slate-900 px-2.5 py-0.5 rounded-full text-xs font-bold">11 个候选岗位全对比</span>
         </div>
       </div>
@@ -51,10 +52,10 @@
         成都市事业单位 11 岗位 8 维评估与优先级排序看板
       </h1>
       <p class="text-indigo-200 text-sm sm:text-base max-w-4xl leading-relaxed">
-        覆盖市直、主城（青羊/武侯/成华）、二圈层（龙泉驿）、三圈层（新津/金堂）共 11 个意向岗位；从<strong>岗位职责、单位职能、公益属性、办公地点、加班出差、职业发展、报考难度与历史参考分、薪酬待遇</strong>八大维度逐一拆解并排序。
+        覆盖市直、主城（青羊/武侯/成华）、二圈层（龙泉驿）、三圈层（新津/金堂）共 11 个意向岗位；新增<strong>离家距离（高新区嘉祥瑞庭南城）、驾车/公交地铁通勤时间、考试类型及笔试科目</strong>，从八大维度逐一拆解排序。
       </p>
       <p class="text-[11px] text-indigo-300/90 mt-2.5 max-w-4xl leading-relaxed">
-        <i class="fa-solid fa-circle-info mr-1"></i>数据来源：2026-11-27 09:22–09:38 招考平台实时缴费截图 + 四川人事考试网、成都市人社局、各区政府门户网公开信息联网核实。全部 11 岗均属<strong>公益一类（财政全额拨款）</strong>事业编制。
+        <i class="fa-solid fa-circle-info mr-1"></i>数据来源：2026-11-27 09:22–09:38 招考平台实时缴费截图 + 四川人事考试网、成都市人社局、各区政府门户网公开信息联网核实；通勤距离与时间按高新区益州大道中段1918号（近1号线天府五街站/5号线民乐站）测算。全部 11 岗均属<strong>公益一类（财政全额拨款）</strong>事业编制。
       </p>
 
       <!-- 快速决策 KPI 栏 -->
@@ -204,6 +205,7 @@
             <span class="font-bold text-slate-600 ml-2 mr-1"><i class="fa-solid fa-arrow-down-short-wide mr-1"></i>排序：</span>
             <select id="sort-select" onchange="applyFilters()" class="rounded-lg border border-slate-300 bg-white px-2.5 py-1.5 text-xs font-medium text-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
               <option value="rank">按推荐优先级 (1 → 11)</option>
+              <option value="distance">按离家距离 (近 → 远)</option>
               <option value="ratio">按实时报录比 (低 → 高)</option>
               <option value="quota">按招录人数 (多 → 少)</option>
             </select>
@@ -222,11 +224,11 @@
           <thead>
             <tr class="bg-slate-100 text-slate-700 font-bold">
               <th class="p-3 rounded-l-lg whitespace-nowrap">顺位 / 梯队</th>
-              <th class="p-3 min-w-[200px]">招考岗位 &amp; 单位</th>
-              <th class="p-3 whitespace-nowrap">圈层 / 地点</th>
-              <th class="p-3 whitespace-nowrap">岗位性质（已核）</th>
+              <th class="p-3 min-w-[190px]">招考岗位 &amp; 单位</th>
+              <th class="p-3 min-w-[155px]">离家距离 &amp; 通勤（车 / 公交）</th>
+              <th class="p-3 min-w-[140px]">考试类型 / 岗位性质</th>
               <th class="p-3 bg-indigo-50/80 text-indigo-900 whitespace-nowrap border-l border-indigo-100">招录 / 缴费（报录比）</th>
-              <th class="p-3 min-w-[165px]">专业要求 &amp; 风险标注</th>
+              <th class="p-3 min-w-[160px]">专业要求 &amp; 风险标注</th>
               <th class="p-3 whitespace-nowrap">参考进面分</th>
               <th class="p-3 rounded-r-lg whitespace-nowrap">预估全包年薪</th>
             </tr>
@@ -287,13 +289,13 @@
 
         <div class="bg-white/10 border border-sky-400/30 rounded-xl p-4 flex flex-col justify-between">
           <div>
-            <div class="text-sky-300 font-bold text-sm mb-1.5">场景 2：抗压能出差 + 冲市直平台</div>
+            <div class="text-sky-300 font-bold text-sm mb-1.5">场景 2：家门口通勤 + 冲市直平台</div>
             <p class="text-slate-300 leading-relaxed mb-3">
-              计算机/软件工程专业，年轻能接受频繁出差和项目制加班，想用更低的竞争比上岸<strong>市直大单位专技岗</strong>。
+              距嘉祥瑞庭南城仅 <strong>3–5 公里</strong>（驾车 10–15 分 / 5号线或骑行 15–25 分），日常通勤近到极致，可对冲一部分审计出差与加班。
             </p>
           </div>
           <div class="bg-sky-500/20 border border-sky-400/30 rounded-lg p-2.5 text-sky-200 font-bold">
-            👉 强烈关注 #3 成都市审计中心<br>（大数据审计 · 60:1 · 无服务期陷阱）
+            👉 强烈关注 #3 成都市审计中心<br>（大数据审计 · 60:1 · 离家最近）
           </div>
         </div>
 
@@ -431,6 +433,13 @@
         code: '201004145003',
         quota: 1,
         paid: 128,
+        distanceKmNum: 16.5,
+        distanceText: '约 15–18 公里',
+        driveTime: '30–40 分钟（高峰 50+ 分）',
+        transitTime: '50–60 分钟',
+        commuteRoute: '5号线民乐/大源站 → 中医大省医院换4号线至西南财大/文化宫站步行',
+        examTypeShort: '事业单位｜综合类（待终核卫基）',
+        examTypeDetail: '事业单位公开招聘（12月26日笔试）。一般疾控非医疗计算机岗考综合类《公基》+《综测》，但极少数卫健单位划入卫生类《卫生公共基础》，务必点开原App「笔试信息」终核',
         natureDetail: '专业技术十二级岗位及以下（有编制）',
         welfareType: '公益一类（财政全额拨款）',
         location: '成都市青羊区（参考主办公址：青羊区蜀鑫路130号，西三环内外侧、主城生活便利）',
@@ -461,6 +470,13 @@
         code: '201006003004',
         quota: 4,
         paid: 549,
+        distanceKmNum: 13.5,
+        distanceText: '约 12–15 公里',
+        driveTime: '25–35 分钟',
+        transitTime: '50–70 分钟',
+        commuteRoute: '5号线民乐站换乘9号线/3号线或经三环南四段/武侯大道公交接驳',
+        examTypeShort: '事业单位｜综合类（公基+综测）',
+        examTypeDetail: '事业单位公开招聘（12月26日笔试），综合类《公共基础知识》50% + 《综合能力测试》50%',
         natureDetail: '专业技术十级岗位及以下（联网已核，有编制）',
         welfareType: '公益一类（财政全额拨款）',
         location: '成都市武侯区武科西五路360号西部智谷B区（武侯区政务服务中心旁）',
@@ -492,11 +508,19 @@
         code: '201002018001',
         quota: 2,
         paid: 120,
+        distanceKmNum: 4.0,
+        distanceText: '约 3–5 公里（极近）',
+        driveTime: '10–15 分钟',
+        transitTime: '15–25 分钟（地铁/骑行）',
+        commuteRoute: '5号线民乐/大源站坐1–2站至锦城大道站，或益州大道骑行约10–15分钟直达',
+        examTypeShort: '事业单位｜综合类（公基+综测）',
+        examTypeDetail: '事业单位公开招聘（市属387名统考，12月26日笔试），综合类《公共基础知识》50% + 《综合能力测试》50%',
         natureDetail: '专业技术十二级岗位及以下（有编制）',
         welfareType: '公益一类（财政全额拨款，市审计局二级预算单位）',
         location: '成都市高新区锦城大道366号（市政府第三办公区，南门核心区）',
         major: '本：计算机科学与技术(080901)、软件工程(080902)、电子与计算机工程(080909T)；研：计算机(0812)、软件(0835)',
         riskTags: [
+          { text: '离家仅3-5km', color: 'emerald' },
           { text: '报录比仅 60:1', color: 'emerald' },
           { text: '市直大平台', color: 'indigo' },
           { text: '加班多 · 常年出差', color: 'rose' }
@@ -509,7 +533,7 @@
         growth: '市直核心强局平台起点全场最高，专技十二级起步可正常评中/副高职称，积累的财政政务大数据实战经验在体制内认可度极高，尚未查见额外5年流调动锁死条款。',
         difficultyDesc: '出自《2026下半年成都市属事业单位公开招聘387名工作人员公告》。限计算机/软件核心专业且招2人，截屏仅120人缴费（60:1，全场第二低！），市直技术岗参考进面分约 68–73 分。',
         incomeDesc: '市级财政兜底极其规范，全包约 14万–17万元/年，双边公积金约 2800–3500 元/月；出差期间按规定另有合规差旅食宿补助。',
-        conclusion: '论“市直平台 + 专技通道 + 60:1上岸难度”，性价比极佳；唯一取决于你是否年轻、能接受频繁市内/省内出差与审计旺季加班。'
+        conclusion: '日常办公离家仅 3–5 公里是巨大加分！论“市直平台 + 专技通道 + 60:1上岸难度 + 极短日常通勤”，性价比极佳，主要看能否接受阶段性驻场出差。'
       },
       {
         rank: 4,
@@ -523,9 +547,16 @@
         code: '未截代码（成华区公招）',
         quota: 1,
         paid: 125,
+        distanceKmNum: 18.5,
+        distanceText: '约 17–20 公里',
+        driveTime: '35–50 分钟',
+        transitTime: '50–60 分钟',
+        commuteRoute: '5号线民乐站 → 市二医院站换4号线至玉双路/新鸿路站步行',
+        examTypeShort: '事业单位｜综合类（公基+综测）',
+        examTypeDetail: '事业单位公开招聘（12月26日笔试），综合类《公共基础知识》50% + 《综合能力测试》50%',
         natureDetail: '管理岗（有编制）',
         welfareType: '公益一类（区委宣传部/区委网信办下属）',
-        location: '成都市成华区（随区委宣传部/区委网信办在成华区级党政办公区或新经济服务中心办公）',
+        location: '成都市成华区（参考主办公区：一环路东三段148号成华区委/区政府大院一带）',
         major: '截图未截取招考条件页（通常限计算机/网安/信息安全等，具体请核对成华区岗位表）',
         riskTags: [
           { text: '党委网信平台', color: 'indigo' },
@@ -540,7 +571,7 @@
         growth: '管理岗在二级事业单位晋升较慢（正副科职数极少，无法像专技岗靠职称涨薪）；优势在于属党委网信序列，政治站位高，文字与应急统筹能力锻炼快，后续参与机关借调或考公较有履历优势。',
         difficultyDesc: '单招 1 人已有 125 人缴费（125:1），主城成华区竞争烈度高，参考进面分约 70–74 分。提示：部分网信岗可能要求中共党员，务必核对原表。',
         incomeDesc: '一圈层主城成华区标准，全包约 15万–18万元/年（双边公积金约 3000–4000 元/月），管理九级/八级起步，后期涨幅不如专技岗灵活。',
-        conclusion: '平台好、待遇高，但“管理岗天花板 + 网信轮班精神紧绷”使其整体舒适度明显低于前3个专技岗。'
+        conclusion: '平台好、待遇高，但“管理岗天花板 + 网信轮班精神紧绷 + 跨南东北穿城通勤”使其整体舒适度低于前3个专技岗。'
       },
       {
         rank: 5,
@@ -554,6 +585,13 @@
         code: '201008104002',
         quota: 1,
         paid: 142,
+        distanceKmNum: 28.0,
+        distanceText: '约 27–29 公里',
+        driveTime: '40–50 分钟（绕城）',
+        transitTime: '1小时20分–1小时40分',
+        commuteRoute: '1号线天府五街站 → 天府广场换2号线至龙泉驿/书房站，转当地公交或打车',
+        examTypeShort: '事业单位｜综合类（公基+综测）',
+        examTypeDetail: '事业单位公开招聘（12月26日笔试），综合类《公共基础知识》50% + 《综合能力测试》50%',
         natureDetail: '七级管理岗位及以下（有编制）',
         welfareType: '公益一类（龙泉驿区人社局下属）',
         location: '成都市龙泉驿区长柏路248号',
@@ -571,7 +609,7 @@
         growth: '七级管理岗及以下（本科入职定九级、硕士定八级，七级即正科在中心职数少、竞争大）；优势是熟知全区人事编制考录政策、对接部门广，便于后续关注区内外遴选。',
         difficultyDesc: '专业跨度极大（中文+计算机+电子+管理），招1人截屏已缴费 142 人（142:1，全场最高报录比！）。龙泉热门岗参考进面分约 67–72 分。',
         incomeDesc: '龙泉驿（经开区）在二圈层中待遇领跑，规范津补贴后全包仍约 13万–16万元/年（双边公积金约 2800–3500 元/月）。',
-        conclusion: '单位规范、龙泉待遇好，但 142:1 卷度居全场之首，且考务责任重，需核查龙泉驿岗位表是否附带“服务期5年不得流调动”。'
+        conclusion: '单位规范、龙泉待遇好，但 142:1 卷度居全场之首，且城南到龙泉公共交通单程约 1.5 小时，优先开车通勤。'
       },
       {
         rank: 6,
@@ -585,9 +623,16 @@
         code: '201017005001',
         quota: 1,
         paid: 47,
+        distanceKmNum: 38.0,
+        distanceText: '驾车约 35–45 公里',
+        driveTime: '45–60 分钟',
+        transitTime: '1.5–2 小时',
+        commuteRoute: '5号线民乐站 → 华兴站换10号线南下至花源/新津站，转当地公交或短途打车',
+        examTypeShort: '事业单位｜综合类（公基+综测）',
+        examTypeDetail: '事业单位公开招聘（12月26日笔试），综合类《公共基础知识》50% + 《综合能力测试》50%',
         natureDetail: '七级管理岗位及以下（联网已核，有编制）',
         welfareType: '公益一类（新津区人社局下属）',
-        location: '成都市新津区普兴街道山河村4组20号（地铁10号线可达新津，近天府新区南延）',
+        location: '成都市新津区普兴街道山河村4组20号（新中医院旁，城南沿成雅/绕城南下）',
         major: '本：法学、会计学、审计学、计算机科学与技术、汉语言文学、网络空间安全（研对应一级学科）',
         riskTags: [
           { text: '全场最低 47:1', color: 'emerald' },
@@ -602,7 +647,7 @@
         growth: '联网核实为“七级管理岗位及以下、面向全国招聘”；二级中心管理职数虽有限，但平时工作节奏舒适，留有充足精力备考上级遴选/考公或兼顾家庭。',
         difficultyDesc: '专业虽涵盖6个常用专业，但截止截屏时仅 47 人缴费（47:1，全场最低！）。三圈层近郊参考进面分约 63–69 分，上岸难度明显低于主城与龙泉。',
         incomeDesc: '新津属三圈层近郊（受天府新区辐射），全包年收入约 12万–14万元/年（双边公积金约 2000–2600 元/月），在当地房价与生活成本下性价比较高。',
-        conclusion: '如果是“先稳稳上岸拿编制”思路，这是 11 个岗位中性价比最高、阻力最小的黑马选择（报前自查备注栏有无5年服务期）。'
+        conclusion: '从城南大源开车走绕城/成雅去新津约 45–60 分钟可控；如果是“先稳稳上岸拿编制”思路，这是全场阻力最小的黑马选择。'
       },
       {
         rank: 7,
@@ -616,6 +661,13 @@
         code: '201017008001',
         quota: 1,
         paid: 106,
+        distanceKmNum: 37.5,
+        distanceText: '驾车约 35–40 公里',
+        driveTime: '40–50 分钟',
+        transitTime: '1.5–2 小时',
+        commuteRoute: '5号线民乐站换10号线至五津/新津站，换乘新津当地公交至迎宾大道234号',
+        examTypeShort: '事业单位｜综合类（公基+综测）',
+        examTypeDetail: '事业单位公开招聘（12月26日笔试），综合类《公共基础知识》50% + 《综合能力测试》50%',
         natureDetail: '七级管理岗位及以下（联网已核，有编制）',
         welfareType: '公益一类（新津区行政审批/政务服务系统）',
         location: '成都市新津区五津街道迎宾大道234号（新津区政务服务中心）',
@@ -632,7 +684,7 @@
         growth: '同样核实为“七级管理岗位及以下”，能接触全区多部门审批流程与企业诉求，协调和公文写作提升快，晋升瓶颈同一般区属二级中心。',
         difficultyDesc: '专业范围比新津人社更宽（多了公共管理类和整个电子信息大类），目前已有 106 人缴费（106:1），是新津人社（47:1）的两倍多，参考进面分约 65–70 分。',
         incomeDesc: '同为新津区财政标准，全包约 12万–14万元/年（双边公积金约 2000–2600 元/月）。',
-        conclusion: '工作环境也不错，但待遇完全一样、报录比却翻倍，若同时符合新津人社条件，建议优先选第6名。'
+        conclusion: '通勤与待遇同新津人社相近，但报录比高出一倍多，若同时符合新津人社条件，建议优先选第6名。'
       },
       {
         rank: 8,
@@ -646,9 +698,16 @@
         code: '201008106002',
         quota: 2,
         paid: 250,
+        distanceKmNum: 30.0,
+        distanceText: '驾车约 28–33 公里',
+        driveTime: '45–60 分钟',
+        transitTime: '1小时20分–1小时40分',
+        commuteRoute: '5/1号线换乘2号线至龙泉驿站，转短途公交或步行至文明东街10号一带',
+        examTypeShort: '事业单位｜综合类（公基+综测）',
+        examTypeDetail: '事业单位公开招聘（12月26日笔试），综合类《公共基础知识》50% + 《综合能力测试》50%',
         natureDetail: '七级管理岗位及以下（有编制）',
         welfareType: '公益一类（龙泉驿区城管和综合执法局下属）',
-        location: '成都市龙泉驿区（随区城管和综合执法局或数字城管业务大楼办公）',
+        location: '成都市龙泉驿区（参考主管部门驻地：龙泉驿区文明东街10号）',
         major: '法学门类(03)、工学门类(08)、管理学门类(12)三大门类（本科学士及以上）',
         riskTags: [
           { text: '招2人', color: 'sky' },
@@ -662,7 +721,7 @@
         growth: '七级管理岗及以下，工作偏基层调度与大量督办台账，长期容易消耗在重复性工单协调中，晋升空间一般。',
         difficultyDesc: '三大门类通招（法学/工学/管理学），招2人已有 250 人缴费（125:1），参考进面分约 67–72 分。',
         incomeDesc: '龙泉驿区标准，全包约 13万–16万元/年（双边公积金约 2800–3500 元/月）。',
-        conclusion: '龙泉驿待遇底座不错且招2人，但城管热线/数字指挥工作繁杂且存在值班概率，排位低于同区人社和主城各岗。'
+        conclusion: '城南跨区往返龙泉每日驾车近1.5小时+，叠加城管热线/数字指挥的值班与工单杂事，整体性价比一般。'
       },
       {
         rank: 9,
@@ -676,9 +735,16 @@
         code: '201008107001',
         quota: 1,
         paid: 140,
+        distanceKmNum: 30.5,
+        distanceText: '驾车约 28–33 公里',
+        driveTime: '45–60 分钟',
+        transitTime: '1小时20分–1小时40分',
+        commuteRoute: '5/1号线换乘2号线至龙泉驿站，转短途公交或步行至文明东街10号一带',
+        examTypeShort: '事业单位｜综合类（公基+综测）',
+        examTypeDetail: '事业单位公开招聘（12月26日笔试），综合类《公共基础知识》50% + 《综合能力测试》50%',
         natureDetail: '七级管理岗位及以下（有编制）',
         welfareType: '公益一类（正科级，龙泉驿区城管和综合执法局下属）',
-        location: '成都市龙泉驿区（随区城管和综合执法局统筹办公）',
+        location: '成都市龙泉驿区（参考主管部门驻地：龙泉驿区文明东街10号）',
         major: '法学门类(03)、工学门类(08)、管理学门类(12)三大门类（本科学士及以上）',
         riskTags: [
           { text: '城管一线辅助', color: 'rose' },
@@ -693,7 +759,7 @@
         growth: '正科级二级单位的七级及以下管理岗，普通岗位晋升窄；一线应急属性偏强，对于追求规律坐班或准备再考公的考生不太友好。',
         difficultyDesc: '专业范围大、单招 1 人已达 140 人缴费（140:1，仅次于龙泉人事考试），参考进面分约 67–72 分。',
         incomeDesc: '龙泉驿区标准，全包约 13万–16万元/年（双边公积金约 2800–3500 元/月）。',
-        conclusion: '竞争比高达 140:1 且大概率面临城管执法系统的加班/备勤节奏，投入产出比偏低。'
+        conclusion: '竞争比高达 140:1 且大概率面临城管执法系统的加班/备勤节奏，加上跨区通勤较远，投入产出比偏低。'
       },
       {
         rank: 10,
@@ -707,6 +773,13 @@
         code: '201008098001',
         quota: 1,
         paid: 132,
+        distanceKmNum: 32.0,
+        distanceText: '直线约 31–33 公里',
+        driveTime: '45–55 分钟',
+        transitTime: '1小时45分+',
+        commuteRoute: '1号线换2号线到龙泉后需转经开区公交专线或网约车（经开区腹地地铁不直达）',
+        examTypeShort: '事业单位｜综合类（公基+综测）',
+        examTypeDetail: '事业单位公开招聘（12月26日笔试），综合类《公共基础知识》50% + 《综合能力测试》50%',
         natureDetail: '七级管理岗位及以下（有编制）',
         welfareType: '公益一类（龙泉驿区经信局二级预算单位）',
         location: '成都市龙泉驿区经开区南四路325号（龙泉驿区经济和信息化局办公楼）',
@@ -723,7 +796,7 @@
         growth: '业务本身不差，但致命扣分项在截屏热评爆出的“不得流调动，打电话说公务员也不能考”（高度吻合龙泉驿5年服务期+禁止流出政策）！七级及以下管理岗若被锁死考公与调动，上升通道几乎被堵死。',
         difficultyDesc: '专业覆盖经济/理学/工学，招1人已缴费 132 人（132:1），参考进面分约 66–71 分。',
         incomeDesc: '龙泉驿区标准，全包约 13万–16万元/年（双边公积金约 2800–3500 元/月）。',
-        conclusion: '务必电话（028-84845121）及原表核实“不得考公/调动”条款；若属实，强烈建议后置。若确认无此限制，可升至第 5–6 名区间。'
+        conclusion: '经开区南四路公共交通极不便（1小时45分+），且务必核实“不得考公/调动”条款；若属实强烈建议后置。'
       },
       {
         rank: 11,
@@ -737,14 +810,21 @@
         code: '201014022001',
         quota: 1,
         paid: 91,
+        distanceKmNum: 65.0,
+        distanceText: '约 60–70 公里（最远）',
+        driveTime: '1小时10分–1小时30分',
+        transitTime: '2.5–3 小时',
+        commuteRoute: '5/1号线至东站/北站转跨区客运/城际公交至金堂，再换乘县城公交至成金大道2888号',
+        examTypeShort: '事业单位｜综合类（公基+综测）',
+        examTypeDetail: '事业单位公开招聘（12月26日笔试），综合类《公共基础知识》50% + 《综合能力测试》50%',
         natureDetail: '管理岗位（有编制）',
         welfareType: '公益一类（财政全额拨款）',
-        location: '成都市金堂县赵镇成金大道2888号（远郊三圈层，距主城约36公里，无直达地铁）',
+        location: '成都市金堂县赵镇成金大道2888号（远郊三圈层，无直达地铁）',
         major: '专业不限（三不限，本科及以上，国民教育）',
         riskTags: [
           { text: '已核：5年不得流调动', color: 'rose' },
           { text: '专业不限（三不限）', color: 'amber' },
-          { text: '远郊待遇垫底', color: 'slate' }
+          { text: '单程60-70km', color: 'slate' }
         ],
         scoreRef: '62–68+ 分',
         incomeRef: '10万–12万',
@@ -754,7 +834,7 @@
         growth: '已联网核实岗位代码 201014022001 明确带有“服务期5年，服务期内不得流（调）动”限制！县级管理岗晋升空间窄，叠加远郊地理限制与5年服务期，流动性最差。',
         difficultyDesc: '专业不限（三不限）是重大隐患！虽然目前缴费仅 91 人（91:1），但截止前最后几小时三不限岗位往往暴增且高分考公选手扎堆，实际进面分可能被拉高至 68–70+ 分。',
         incomeDesc: '三圈层远郊县金堂标准，全包约 10万–12万元/年（双边公积金约 1500–2200 元/月），为11个岗位中最低一档。',
-        conclusion: '远郊待遇最低 + 已查实5年不得流调动 + 招商考核忙碌 + 三不限隐形高分卷，综合评估建议最后考虑。'
+        conclusion: '离家 60–70 公里几乎无法当日往返主城 + 远郊待遇最低 + 已查实5年不得流调动 + 三不限隐形高分卷，综合评估建议最后考虑。'
       }
     ];
 
@@ -807,6 +887,8 @@
 
       if (sortBy === 'rank') {
         list.sort((a, b) => a.rank - b.rank);
+      } else if (sortBy === 'distance') {
+        list.sort((a, b) => (a.distanceKmNum - b.distanceKmNum) || (a.rank - b.rank));
       } else if (sortBy === 'ratio') {
         list.sort((a, b) => (a.paid / a.quota) - (b.paid / b.quota));
       } else if (sortBy === 'quota') {
@@ -828,6 +910,7 @@
         const st = getTierStyle(j.tier);
         const ratio = (j.paid / j.quota).toFixed(1).replace(/\.0$/, '');
         const ratioColor = (j.paid / j.quota) <= 65 ? 'text-emerald-600' : ((j.paid / j.quota) >= 135 ? 'text-rose-600' : 'text-amber-600');
+        const distColor = j.distanceKmNum <= 10 ? 'text-emerald-700' : (j.distanceKmNum >= 50 ? 'text-rose-600' : 'text-slate-800');
         return `
           <tr class="${st.rowBg} transition-colors">
             <td class="p-3 whitespace-nowrap">
@@ -841,17 +924,19 @@
                 ${j.title} <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400 ml-0.5"></i>
               </a>
               <div class="text-[11px] text-slate-500 mt-0.5">${j.unit}</div>
-              <div class="text-[10px] text-slate-400 font-mono">代码：${j.code}</div>
-            </td>
-            <td class="p-3 whitespace-nowrap">
-              <div class="font-semibold text-slate-800">${j.zoneLabel}</div>
-              <div class="text-[10px] text-emerald-700 font-medium">公益一类</div>
+              <div class="text-[10px] text-slate-400 font-mono">${j.zoneLabel} · 代码：${j.code}</div>
             </td>
             <td class="p-3">
-              <span class="inline-block px-2 py-0.5 rounded font-bold text-[11px] ${j.jobCategory === '专技' ? 'bg-emerald-100 text-emerald-800' : 'bg-slate-100 text-slate-700'}">
-                ${j.jobCategory}岗
+              <div class="font-bold ${distColor}">${j.distanceText}</div>
+              <div class="text-[10px] text-slate-600 mt-0.5"><i class="fa-solid fa-car text-slate-400 mr-1"></i>${j.driveTime}</div>
+              <div class="text-[10px] text-slate-600"><i class="fa-solid fa-train-subway text-slate-400 mr-1"></i>${j.transitTime}</div>
+            </td>
+            <td class="p-3">
+              <div class="text-[10px] font-bold text-indigo-700 mb-1">${j.examTypeShort}</div>
+              <span class="inline-block px-1.5 py-0.5 rounded font-bold text-[10px] ${j.jobCategory === '专技' ? 'bg-emerald-100 text-emerald-800' : 'bg-slate-100 text-slate-700'}">
+                ${j.jobCategory}岗 · 公益一类
               </span>
-              <div class="text-[10px] text-slate-500 mt-1 max-w-[130px]">${j.natureDetail.replace('（有编制）', '')}</div>
+              <div class="text-[10px] text-slate-500 mt-0.5 max-w-[140px]">${j.natureDetail.replace('（有编制）', '')}</div>
             </td>
             <td class="p-3 bg-indigo-50/40 border-l border-indigo-100 whitespace-nowrap">
               <div class="font-bold text-slate-800">招 ${j.quota} / 缴 ${j.paid}</div>
@@ -892,7 +977,8 @@
                   </div>
                   <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-slate-500 mt-1">
                     <span><i class="fa-solid fa-hashtag mr-1 text-slate-400"></i>代码：<strong>${j.code}</strong></span>
-                    <span><i class="fa-solid fa-location-dot mr-1 text-slate-400"></i>${j.zoneLabel}</span>
+                    <span><i class="fa-solid fa-location-dot mr-1 text-slate-400"></i>${j.zoneLabel}（距家 <strong>${j.distanceText}</strong>）</span>
+                    <span><i class="fa-solid fa-file-pen mr-1 text-slate-400"></i>${j.examTypeShort}</span>
                     <span><i class="fa-solid fa-users mr-1 text-slate-400"></i>招 <strong>${j.quota}</strong> 人 · 已缴费 <strong>${j.paid}</strong> 人（<strong>${ratio}:1</strong>）</span>
                   </div>
                 </div>
@@ -913,12 +999,16 @@
                 <p class="text-slate-700 leading-relaxed">${j.dutiesUnit}</p>
               </div>
               <div class="bg-slate-50/90 rounded-xl p-3.5 border border-slate-200/70">
-                <div class="font-bold text-indigo-700 mb-1">3* 岗位性质（公益类别与编制等级）</div>
-                <p class="text-slate-700 leading-relaxed"><strong>${j.welfareType}</strong> · ${j.natureDetail}</p>
+                <div class="font-bold text-indigo-700 mb-1">3* 岗位性质与考试类型</div>
+                <p class="text-slate-700 leading-relaxed"><strong>${j.welfareType}</strong> · ${j.natureDetail}<br><span class="text-indigo-800 font-medium">考试类型：${j.examTypeDetail}</span></p>
               </div>
               <div class="bg-slate-50/90 rounded-xl p-3.5 border border-slate-200/70">
-                <div class="font-bold text-indigo-700 mb-1">4* 工作地点</div>
-                <p class="text-slate-700 leading-relaxed">${j.location}</p>
+                <div class="font-bold text-indigo-700 mb-1">4* 工作地点与离家通勤（起点：嘉祥瑞庭南城）</div>
+                <p class="text-slate-700 leading-relaxed">
+                  ${j.location}<br>
+                  <span class="inline-block mt-1 font-semibold text-slate-900"><i class="fa-solid fa-route text-indigo-500 mr-1"></i>距离：${j.distanceText} ｜ <i class="fa-solid fa-car text-emerald-600 mx-1"></i>开车：${j.driveTime} ｜ <i class="fa-solid fa-train-subway text-sky-600 mx-1"></i>公共交通：${j.transitTime}</span><br>
+                  <span class="text-[11px] text-slate-500">参考公交/地铁：${j.commuteRoute}</span>
+                </p>
               </div>
               <div class="bg-slate-50/90 rounded-xl p-3.5 border border-slate-200/70">
                 <div class="font-bold text-indigo-700 mb-1">5* 加班 / 出差 / 值班情况</div>
